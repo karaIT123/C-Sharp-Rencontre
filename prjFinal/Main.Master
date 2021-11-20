@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="prjFinal.Main" %>
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head runat="server">
+    <title>Navbar template</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="sample page to include bootstrap" >
+    <meta name="author" content="Vanelle" />
+
+    <link href="Content/bootstrap.css" rel="stylesheet"/>
+    <asp:ContentPlaceHolder ID="StyleSection" runat="server" />
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentSection" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <script src="Scripts/jquery-3.6.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <asp:ContentPlaceHolder ID="ScriptSection" runat="server"/>
+</body>
+</html>
